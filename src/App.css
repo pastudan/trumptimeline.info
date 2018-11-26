@@ -9,13 +9,47 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 15vh;
+  padding-left: 5vh;
+  font-size: 28px;
   color: white;
+  cursor: pointer;
+}
+
+.App-header div + div {
+  margin-left: 10px;
+}
+
+.App-header div:hover,
+.App-header div.active {
+  border-bottom: 4px solid red;
+}
+
+.App-section {
+  height: 80vh;
+  margin-left: 5vh;
+  border-left: 3px dashed white;
+  position: relative;
+}
+
+.App-section .date {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.App-section .date:before {
+  display: block;
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+  content: '';
+  margin-left: -9px;
+  border-radius: 50%;
+  background-color: white;
 }
 
 .App-link {
